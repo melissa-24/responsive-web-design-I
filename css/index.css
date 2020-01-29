@@ -204,6 +204,29 @@ hr {width: 90%;
 	top: 20px;
 	flex-direction: column;}
 .footer {text-align: center;
-	padding: 25px;}
-
+    padding: 25px;}
+    
+/* On screens that are 800px or less, set the background color to blue */
+@media screen and (max-width: 800px) {
+    body {background-color: blue;
+    }
+    .thenav {display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        background-color: green;
+          background-image: radial-gradient(white, green, white);}
+    .img1 {display: flex;
+        align-items: center;
+        justify-content: center;}
+    .nav {display: flex;
+        justify-content: center;
+        align-items: center;}
+    .img2 {display: none;}
+  }
+  
+  /* On screens that are 500px or less, set the background color to olive */
+  @media screen and (max-width: 500px) {
+    body {background-color: olive;
+    }
+  }
 
