@@ -200,8 +200,6 @@ hr {width: 90%;
     
 /* On screens that are 800px or less, set the background color to blue */
 @media screen and (max-width: 800px) {
-    body {background-color: blue;
-    }
 	.thenav {flex-direction: column-reverse;
 		flex-wrap: wrap;}
     .img1 {align-items: center;
@@ -214,8 +212,6 @@ hr {width: 90%;
   
   /* On screens that are 500px or less, set the background color to olive */
   @media screen and (max-width: 500px) {
-    body {background-color: olive;
-	}
 	.thenav {position: absolute;}
 	.nav {flex-direction: column;
 		justify-content: center;
