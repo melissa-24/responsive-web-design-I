@@ -83,15 +83,7 @@ h1, h2, h3, h4, h5 {
   	text-decoration: none;
   	font-size: 17px;}
 .img1 {display: flex; /*stretch goal #5*/
-	-webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
-	animation: myfirst 5s linear 2s infinite alternate;}
-@keyframes myfirst {
-		0%   {background-color:red; left:0px; top:0px;}
-		25%  {background-color:yellow; left:200px; top:0px;}
-		50%  {background-color:blue; left:200px; top:200px;}
-		75%  {background-color:green; left:0px; top:200px;}
-		100% {background-color:red; left:0px; top:0px;}
-	  }
+}
 .servicesimg {display: flex;
 	position: relative;
 	top: 60px;
@@ -121,7 +113,7 @@ h1 {font-size: 80px;}
 h2 {font-size: 30px;}
 h3 {font-size: 20px;}
 .content {display: flex;
-	position: relative:}
+	position: relative;}
 .button {display: flex;
 	align-self: center;
 	border: 2px solid black;
@@ -210,23 +202,40 @@ hr {width: 90%;
 @media screen and (max-width: 800px) {
     body {background-color: blue;
     }
-    .thenav {display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        background-color: green;
-          background-image: radial-gradient(white, green, white);}
-    .img1 {display: flex;
-        align-items: center;
-        justify-content: center;}
-    .nav {display: flex;
-        justify-content: center;
-        align-items: center;}
-    .img2 {display: none;}
+	.thenav {flex-direction: column-reverse;
+		flex-wrap: wrap;}
+    .img1 {align-items: center;
+		justify-content: center;}
+    .nav {flex-wrap: wrap;}
+	.img2 {display: none;}
+	.heading{top: 80px;}
+	.header {height: 400px;}
   }
   
   /* On screens that are 500px or less, set the background color to olive */
   @media screen and (max-width: 500px) {
     body {background-color: olive;
-    }
+	}
+	.thenav {position: absolute;}
+	.nav {flex-direction: column;
+		justify-content: center;
+		align-items: center;}
+	.heading {top: 375px;}
+	h1 {font-size: 60px;}
+	hr {top: 220px;}
+	.row1 {flex-direction: column;
+		top: 200px;}
+	.features {width: 95%;}
+	.about {width: 95%;}
+	.img3 {position: relative;
+		top: 200px;}
+	.row2 {flex-direction: column;
+		top: 200px;}
+	.services {width: 95%;}
+	.product {width: 95%;}
+	.vision {width: 95%;}
+	.contact {top: 200px;}
+	.footer {position: relative;
+		top: 200px;}
   }
 
